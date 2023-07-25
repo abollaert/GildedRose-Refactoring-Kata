@@ -67,12 +67,12 @@ final class GildedRoseTest {
 
     @Test
     void testSulfurasQualityDoesntChange() {
-        final Item item = new Item(ITEM_SULFURAS, 1, 45);
+        final Item item = new Item(ITEM_SULFURAS, 1, 80);
 
         final GildedRose gildedRose = new GildedRose(new Item[] { item });
         gildedRose.updateQuality();
 
-        assertThat(item.quality).isEqualTo(45);
+        assertThat(item.quality).isEqualTo(80);
     }
 
     @ValueSource(strings = {
