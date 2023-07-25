@@ -32,7 +32,7 @@ final class GildedRoseTest {
         final GildedRose gildedRose = new GildedRose(new Item[] { item });
         gildedRose.updateQuality();
 
-        assertThat(item.sellIn).isEqualTo(0);
+        assertThat(item.sellIn).isZero();
     }
 
     @Test

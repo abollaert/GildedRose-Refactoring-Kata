@@ -91,6 +91,7 @@ enum ItemType {
             }
         }
 
+        // Everything else goes in the "normal" bin.
         return NORMAL;
     }
 
