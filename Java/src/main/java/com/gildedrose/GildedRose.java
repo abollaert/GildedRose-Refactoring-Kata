@@ -57,7 +57,7 @@ class GildedRose {
         /** The name prefix for the items. */
         private final String namePrefix;
 
-        /** Calculates the next quality, takes an item, returns the quality change. */
+        /** Calculates the next quality : takes an item, returns the quality gradient. */
         private final Function<Item, Integer> qualityCalculator;
 
         /** Indicartes whether the item expires. */
