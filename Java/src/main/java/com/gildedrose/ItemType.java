@@ -9,7 +9,6 @@ enum ItemType {
 
     NORMAL(null, true, item -> {
         if (item.sellIn > 0) {
-            /** Aged brie. */
             return GildedRose.DEFAULT_DEGRADATION_RATE_BEFORE_SELL_IN_DATE;
         } else {
             return GildedRose.DEFAULT_DEGRADATION_RATE_AFTER_SELL_IN_DATE;
