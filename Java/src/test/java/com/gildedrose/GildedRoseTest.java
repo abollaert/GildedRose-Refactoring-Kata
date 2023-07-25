@@ -172,4 +172,14 @@ final class GildedRoseTest {
 
         assertThat(item.quality).isEqualTo(50);
     }
+
+    @Test
+    void testQualityCannotGoBelow0() {
+        final Item item = new Item(ITEM_ELIXIR_MONGOOSE, 1, 0);
+
+        final GildedRose gildedRose = new GildedRose(new Item[] { item });
+        gildedRose.updateQuality();
+
+        assertThat(item.quality).isEqualTo(0);
+    }
 }
